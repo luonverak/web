@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Class Object in JavaScript</h1>
+</body>
+<script>
+    class People{
+        constructor(id,name,gender,age,address){
+            this.id      = id;
+            this.name    = name;
+            this.gender  = gender;
+            this.age     = age;
+            this.address = address;
+        }
+        toString(){
+            return this.id+'  '+this.name+'  '+this.gender+'  '+this.age+'  '+this.address;
+        }
+    }
+    class Student extends People{
+        constructor(id,name,gender,age,address,score1,score2,score3){
+            super(id,name,gender,age,address);
+            this.score1 = score1;
+            this.score2 = score2;
+            this.score3 = score3;
+        }
+        total(){
+            return this.score1+this.score2+this.score3;
+        }
+        average(){
+            return this.total()/3;
+        }
+        toString(){
+            return super.toString()+' '+this.score1+'  '+this.score2+'  '+this.score3;
+       }
+    }
+    let student = new Student(1,'Koka','M',18,'P-P',90,70,80);
+    document.write('<h1>'+student+'</h1>');
+    document.write('<h1>'+student.total()+'</h1>');
+    document.write('<h1>'+student.average()+'</h1>');
+</script>
+</html>

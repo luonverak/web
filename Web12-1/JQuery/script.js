@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#openAdd").click(function(){
+        $("#btn_save").show();
+        $("#btn_update").hide();
+    })
+    $("body").on("click","#openUpdate",function(){
+        $("#btn_save").hide();
+        $("#btn_update").show();
+    })
+})

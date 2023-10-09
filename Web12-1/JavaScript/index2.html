@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/app2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid bg-dark float-end">
+        <h1 class="text-light">Data Management</h1>
+        <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#myModal">
+            Enter Data
+          </button>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Data Information</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="" method="post">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" id="name">
+                    <label for="">Gender</label>
+                    <select name="" id="gender" class="form-select">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <label for="">Age</label>
+                    <input type="text" class="form-control" id="age">
+                    <label for="">Adress</label>
+                    <input type="text" class="form-control" id="address">
+                    <label for="">Profile</label>
+                    <input type="file" class="form-control" id="profile" >
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button id="btnAdd" type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <table id="table" class="table table-hover table-dark align-middle" style="table-layout: fixed;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Profile</th>
+            </tr>
+        </thead>
+        <tbody id="bodydata">
+            <tr>
+                <td>sok</td>
+                <td>male</td>
+                <td>19</td>
+                <td>takeo</td>
+                <td>
+                    <img id="thumbnail" src="image/vd1.png" width="120" height="120" style="object-fit: cover;" alt="">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="js/script2.js"></script>
+</html>

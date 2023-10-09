@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color: cornflowerblue;
+    float: left;
+}
+.container ul {
+    list-style: none;
+}
+.container ul li{
+    float: left;
+    position: relative;
+}
+.container ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 10px 15px;
+}
+.container ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.284);
+}
+.container ul li:hover .sub-menu{
+    display: block;
+    width: 100%;
+}
+.sub-menu{
+    position: absolute;
+    background-color: red;
+    display: none;
+    width: 100%;
+}

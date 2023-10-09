@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Class JavaScript</h1>
+</body>
+<script>
+    class Data{
+        constructor(id,name,gender){
+            this.id = id;
+            this.name = name;
+            this.gender = gender;
+        }
+        toString(){
+            return this.id+'  '+this.name+'  '+this.gender;
+        }
+    }
+    class Student extends Data{
+        constructor(id,name,gender,subject,score){
+            super(id,name,gender);
+            this.subject = subject;
+            this.score   = score;
+        }
+        toString(){
+           return  super.toString() + '  '+this.subject+'  '+this.score;
+        }
+    }
+    let student = new Student(101,'Koka','Female','Js',10);
+    document.write('<h1>'+student+'</h1>');
+</script>
+</html>

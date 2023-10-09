@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+   width: 500px;
+   height: 750px; 
+   background-color: blue;
+}
+.head-page , .footer-page{
+    width: 100%;
+    height: 25%;
+    background-color: yellow;
+}
+.footer-page{
+    background-color: orange;
+}
+.body-page{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+.head-page , .body-page , .footer-page , h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

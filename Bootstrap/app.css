@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Battambang', cursive;
+}
+.thumbnail{
+    width: 100%;
+    height: 400px;
+}
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+
+    width: 100%;
+    height: 100px;
+    background-color: rgb(235, 234, 234);
+}
+.title h3{
+    padding: 15px;
+    font-size: 18px;
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .thumbnail{
+        width: 100%;
+        height: 80%;
+    }
+    .thumbnail img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .title{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    .title h3{
+        font-size: 16px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+                line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ }
